@@ -40,8 +40,8 @@ function App() {
   const deleteJob = async (id) => {
     try {
       console.log('Deleting job with ID:', id);
-      console.log('To URL:', `https://job-tracker-backend.onrender.com/api/jobs/${id}`);
-      await axios.delete(`https://job-tracker-backend.onrender.com/api/jobs/${id}`);
+      console.log('To URL:', `https://job-tracker-backend-production-9d1d.up.railway.app/api/jobs/${id}`);
+      await axios.delete(`https://job-tracker-backend-production-9d1d.up.railway.app/api/jobs/${id}`);
       console.log('Job deleted');
       fetchJobs();
     } catch (error) {
